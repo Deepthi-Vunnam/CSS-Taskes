@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun Eclipse Animation</title>
+
+<style>
+body{
+    background-color: rgba(255,166,0,0.95);
+}
+
+.sunny{
+    height:200px;
+    width:200px;
+    background-color: rgb(229,151,7);
+    border-radius:50%;
+    position: relative;
+    top:200px;
+    left:600px;
+    z-index:2;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.35);
+    animation: sunShadow 6s ease-in-out infinite alternate-reverse;
+}
+
+
+.shadow{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    position:absolute;
+    top:280px;
+    left:608px;
+    z-index:1;
+    animation: move 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes move{
+    0%{
+        top:300px;
+        left:630px;
+        background-color: yellow;
+    }
+    25%{
+        height:230px;
+        width:230px;
+        top:264px;
+        left:593px;
+        background-color: yellow;
+    }
+    50%{
+        height:200px;
+        width:200px;
+        top:280px;
+        left:608px;
+        background-color: yellow;
+    }
+    75%{
+        height:230px;
+        width:230px;
+        top:264px;
+        left:593px;
+        background-color: yellow;
+    }
+    100%{
+        top:300px;
+        left:630px;
+        background-color: yellow;
+    }
+}
+
+</style>
+</head>
+
+<body>
+<h1 style="color:white;text-align:center;">Animation</h1>
+
+<div class="sunny"></div>
+<div class="shadow"></div>
+
+</body>
+</html>

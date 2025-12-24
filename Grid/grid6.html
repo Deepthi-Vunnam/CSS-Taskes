@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid6</title>
+    <style>
+        .main{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap: 10px;
+            background-color: white;
+        }
+        .child1{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .child2{
+            background-color: palevioletred;
+        }
+        .child3{
+            background-color: palegreen;
+        }
+        .child4{
+            background-color: peru;
+        }
+        .child5{
+            background-color: lightcoral;
+        }
+        .child6{
+            background-color: lightslategray;
+        }
+        .child8{
+            background-color: lightcoral;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .child9{
+            background-color: peru;
+        }
+        .child10{
+            background-color: palegreen;
+        }
+        .child11{
+            background-color: palevioletred;
+        }
+        .child13{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .child14{
+            background-color: palevioletred;
+        }
+        .child15{
+            background-color: palegreen;
+        }
+        .child16{
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+        <div class="child7"></div>
+        <div class="child8"></div>
+        <div class="child9"></div>
+        <div class="child10"></div>
+        <div class="child11"></div>
+        <div class="child12"></div>
+        <div class="child13"></div>
+        <div class="child14"></div>
+        <div class="child15"></div>
+        <div class="child16"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Gallery By Using Grid-Area</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Image-Gallery>*{
+        height: 100%;
+        width: 100%;
+        }
+        .Image-Gallery{
+            height: 100vh;
+            width: 100%;
+            display:grid;
+            gap: 4px;
+            grid-template-rows: repeat(4, 180px);
+            grid-template-areas: 
+            'img1 img2 img3 img4 img5'
+            'img6 img7 img8 img9 img10'
+            'img11 img11 img12 img13 img14'
+            'img15 img16 img17 img18 img19';
+        }
+        .img1{
+            grid-area: img1;
+        }
+          .img2{
+            grid-area: img2;
+        }
+          .img3{
+            grid-area: img3;
+        }
+          .img4{
+            grid-area: img4;
+        }
+          .img5{
+            grid-area: img5;
+        }
+          .img6{
+            grid-area: img6;
+        }
+          .img7{
+            grid-area: img7;
+        }
+          .img8{
+            grid-area: img8;
+        }
+          .img9{
+            grid-area: img9;
+        }
+          .img10{
+            grid-area: img10;
+        }
+          .img11{
+            grid-area: img11;
+        }
+          .img12{
+            grid-area: img12;
+        }
+          .img13{
+            grid-area: img13;
+        }
+          .img14{
+            grid-area: img14;
+        }
+          .img15{
+            grid-area: img15;
+        }
+          .img16{
+            grid-area: img16;
+        }
+          .img17{
+            grid-area: img17;
+        }
+          .img18{
+            grid-area: img18;
+        }
+          .img19{
+            grid-area: img19;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="Image-Gallery">
+        <img src="./Images/1.jpg"  class="img1">
+        <img src="./Images/2.jpg"  class="img2">
+        <img src="./Images/3.jpg"  class="img3">
+        <img src="./Images/4.jpg"  class="img4">
+        <img src="./Images/5.jpg"  class="img5">
+        <img src="./Images/6.jpg"  class="img6">
+        <img src="./Images/7.jpg"  class="img7">
+        <img src="./Images/8.jpg"  class="img8">
+        <img src="./Images/9.jpg"  class="img9">
+        <img src="./Images/10.jpg" class="img10">
+        <img src="./Images/11.jpg" class="img11">
+        <img src="./Images/12.jpg" class="img12">
+        <img src="./Images/13.jpg" class="img13">
+        <img src="./Images/14.jpg" class="img14">
+        <img src="./Images/15.jpg" class="img15">
+        <img src="./Images/16.jpg" class="img16">
+        <img src="./Images/17.jpg" class="img17">
+        <img src="./Images/18.jpg" class="img18">
+        <img src="./Images/19.jpg" class="img19">
+    </div>
+</body>
+</html>

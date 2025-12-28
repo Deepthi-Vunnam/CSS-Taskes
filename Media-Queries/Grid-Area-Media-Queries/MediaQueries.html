@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Areas</title>
+    <style>        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 170px);
+    grid-template-areas: 
+    "child1 child1 child2 child2 child3 child4 child4 child5 child5"
+    "child6 child7 child7 child8 child8 child8 child9 child9 child10"
+    "child11 child11 child11 child11 child12 child13 child13 child14 child14"
+    "child15 child15 child16 child17 child17 child18 child18 child19 child19";
+
+    gap: 10px;
+    padding: 10px;
+}
+ .parent>*{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ /* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .parent{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(19, 220px);
+        grid-template-areas:
+        "child1"
+        "child2"
+        "child3"
+        "child4"
+        "child5"
+        "child6"
+        "child7"
+        "child8"
+        "child9"
+        "child10"
+        "child11"
+        "child12"
+        "child13"
+        "child14"
+        "child15"
+        "child16"
+        "child17"
+        "child18"
+        "child19";
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .parent{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 160px);
+        grid-template-areas:
+        "child1 child1 child2 child2 child3 child3"
+        "child4 child4 child5 child5 child6 child6"
+        "child7 child7 child8 child8 child9 child9"
+        "child10 child10 child11 child11 child12 child12"
+        "child13 child13 child14 child14 child15 child15"
+        "child16 child16 child17 child17 child18 child18"
+        "child19 child19 child19 child19 child19 child19";
+    }
+}
+
+
+
+.child1{ grid-area: child1; }
+.child2{ grid-area: child2; }
+.child3{ grid-area: child3; }
+.child4{ grid-area: child4; }
+.child5{ grid-area: child5; }
+
+.child6{ grid-area: child6; }
+.child7{ grid-area: child7; }
+.child8{ grid-area: child8; }
+.child9{ grid-area: child9; }
+.child10{ grid-area: child10; }
+
+.child11{ grid-area: child11; }
+.child12{ grid-area: child12; }
+.child13{ grid-area: child13; }
+.child14{ grid-area: child14; }
+
+.child15{ grid-area: child15; }
+.child16{ grid-area: child16; }
+.child17{ grid-area: child17; }
+.child18{ grid-area: child18; }
+.child19{ grid-area: child19; }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="./Images/1.jpg" alt="" class="child1">
+        <img src="./Images/2.jpg" alt="" class="child2">
+        <img src="./Images/3.jpg" alt="" class="child3">
+        <img src="./Images/4.jpg" alt="" class="child4">
+        <img src="./Images/5.jpg" alt="" class="child5">
+        <img src="./Images/6.jpg" alt="" class="child6">
+        <img src="./Images/7.jpg" alt="" class="child7">
+        <img src="./Images/8.jpg" alt="" class="child8">
+        <img src="./Images/9.jpg" alt="" class="child9">
+        <img src="./Images/10.jpg" alt="" class="child10">
+        <img src="./Images/11.jpg" alt="" class="child11">
+        <img src="./Images/12.jpg" alt="" class="child12">
+        <img src="./Images/13.jpg" alt="" class="child13">
+        <img src="./Images/14.jpg" alt="" class="child14">
+        <img src="./Images/15.jpg" alt="" class="child15">
+        <img src="./Images/16.jpg" alt="" class="child16">
+        <img src="./Images/17.jpg" alt="" class="child17">
+        <img src="./Images/18.jpg" alt="" class="child18">
+        <img src="./Images/19.jpg" alt="" class="child19">
+
+
+        
+    </div>
+</body>
+</html>

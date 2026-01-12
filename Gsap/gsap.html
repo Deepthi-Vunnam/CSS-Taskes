@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color:lightslategray;
+            color:white;
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+        .page1{
+            height:100vh;
+            width:100%;
+            background-color: rgba(0, 128, 128, 0.6);
+            font-size: 30px;
+            color:purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page2{
+            height:100vh;
+            width:100%;
+            background-color: rgba(161, 38, 73, 0.5);
+            font-size: 30px;
+            color:crimson;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page3{
+            height:100vh;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            background-color:rgba(149, 72, 28, 0.51);
+        }
+        .page3 img{
+            height:300px;
+            width:300px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 5px 8px white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Nature away</h1>
+        <section>
+            <p>Home</p>
+            <p>Pages</p>
+            <p>Contact</p>
+            <p>Element</p>
+            <p>Docs</p>
+        </section>
+        </nav>
+        <div class="page1">
+            <h1>   
+            HELLO EVERYONE               
+            </h1>
+        </div>
+        <div class="page2">
+            <h1>
+            WELCOME TO NATURE 
+            </h1>
+        </div>
+        <div class="page3">
+            <img src="P1.jpg" alt="" class="img1">
+            <img src="P2.jpg" alt="" class="img2">
+            <img src="P3.jpg" alt="" class="img3">
+            <img src="P4.jpg" alt="" class="img4">
+           
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+<script src="gsap.js"></script>
+</body>
+</html>
